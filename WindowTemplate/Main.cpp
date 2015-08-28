@@ -78,18 +78,18 @@ int WINAPI WinMain(	HINSTANCE hInstance,
 
     // Note: Create the Window
     hwnd = CreateWindowEx(
-        0,							/* Extended for variations possible */
-        gWindow,					/* Classname */
-        "WindowTitle",				/* Title Text */
+        0,				/* Extended for variations possible */
+        gWindow,			/* Classname */
+        "WindowTitle",			/* Title Text */
         WS_OVERLAPPEDWINDOW,		/* Default Window */
-        CW_USEDEFAULT, 				/* Windows default screen position */
-		CW_USEDEFAULT, 				
-		640, 						/* Height */
-		480,						/* Width */
-        HWND_DESKTOP, 				/* Indicator: Child-Window of Desktop */
-		NULL, 						/* No Menu */
-		hInstance, 					/* Program Instance Handler */
-		NULL						/* No Window Creation data */
+        CW_USEDEFAULT, 			/* Windows default screen position */
+	CW_USEDEFAULT, 				
+		640, 			/* Height */
+		480,			/* Width */
+        HWND_DESKTOP, 			/* Indicator: Child-Window of Desktop */
+		NULL, 			/* No Menu */
+		hInstance, 		/* Program Instance Handler */
+		NULL			/* No Window Creation data */
 		);
 
     if(hwnd == NULL)
